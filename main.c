@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            printf("%d, %d\n", i, j);
-            break;
-        }
+    for (int i = 100; i < 1000; ++i) {
+        int a = i % 10, b = (i / 10) % 10, c = i / 100;
+            if (a * a * a + b * b * b + c * c * c == i) {
+                printf("%d\n", i);
+            }
     }
     return 0;
 }
